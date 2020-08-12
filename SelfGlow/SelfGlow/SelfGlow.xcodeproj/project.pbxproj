@@ -16,7 +16,25 @@
 		CF2A66C424E3A33F00223A36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A66C324E3A33F00223A36 /* ViewController.swift */; };
 		CF2A66C824E3AB8500223A36 /* timerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A66C724E3AB8500223A36 /* timerViewController.swift */; };
 		CF2A66CA24E3B32C00223A36 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CF2A66C924E3B32C00223A36 /* 1.mp3 */; };
+		CF2A66CD24E437EA00223A36 /* spotifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A66CC24E437EA00223A36 /* spotifyViewController.swift */; };
+		CF2A66CF24E4399B00223A36 /* notesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A66CE24E4399B00223A36 /* notesViewController.swift */; };
+		CF2A66D324E46A7F00223A36 /* feelingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A66D224E46A7F00223A36 /* feelingsViewController.swift */; };
+		CFE26B2F24E4ABBD001985F7 /* tipsandresourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE26B2E24E4ABBC001985F7 /* tipsandresourcesViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		CF2A66CB24E4351200223A36 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
 		CF2A66A124E311B100223A36 /* SelfGlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfGlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +48,10 @@
 		CF2A66C324E3A33F00223A36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF2A66C724E3AB8500223A36 /* timerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerViewController.swift; sourceTree = "<group>"; };
 		CF2A66C924E3B32C00223A36 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 1.mp3; path = ../../../../1.mp3; sourceTree = "<group>"; };
+		CF2A66CC24E437EA00223A36 /* spotifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spotifyViewController.swift; sourceTree = "<group>"; };
+		CF2A66CE24E4399B00223A36 /* notesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notesViewController.swift; sourceTree = "<group>"; };
+		CF2A66D224E46A7F00223A36 /* feelingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feelingsViewController.swift; sourceTree = "<group>"; };
+		CFE26B2E24E4ABBC001985F7 /* tipsandresourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsandresourcesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +87,10 @@
 				CF2A66A424E311B100223A36 /* AppDelegate.swift */,
 				CF2A66A624E311B100223A36 /* SceneDelegate.swift */,
 				CF2A66AA24E311B100223A36 /* Main.storyboard */,
+				CFE26B2E24E4ABBC001985F7 /* tipsandresourcesViewController.swift */,
+				CF2A66D224E46A7F00223A36 /* feelingsViewController.swift */,
+				CF2A66CE24E4399B00223A36 /* notesViewController.swift */,
+				CF2A66CC24E437EA00223A36 /* spotifyViewController.swift */,
 				CF2A66C724E3AB8500223A36 /* timerViewController.swift */,
 				CF2A66C324E3A33F00223A36 /* ViewController.swift */,
 				CF2A66BF24E3A01300223A36 /* newsViewController.swift */,
@@ -88,6 +114,7 @@
 				CF2A669F24E311B100223A36 /* Resources */,
 			);
 			buildRules = (
+				CF2A66CB24E4351200223A36 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -149,10 +176,14 @@
 			files = (
 				CF2A66C824E3AB8500223A36 /* timerViewController.swift in Sources */,
 				CF2A66C424E3A33F00223A36 /* ViewController.swift in Sources */,
+				CF2A66CD24E437EA00223A36 /* spotifyViewController.swift in Sources */,
 				CF2A66AF24E311B100223A36 /* SelfGlow.xcdatamodeld in Sources */,
+				CF2A66CF24E4399B00223A36 /* notesViewController.swift in Sources */,
 				CF2A66A524E311B100223A36 /* AppDelegate.swift in Sources */,
+				CFE26B2F24E4ABBD001985F7 /* tipsandresourcesViewController.swift in Sources */,
 				CF2A66A724E311B100223A36 /* SceneDelegate.swift in Sources */,
 				CF2A66C024E3A01300223A36 /* newsViewController.swift in Sources */,
+				CF2A66D324E46A7F00223A36 /* feelingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

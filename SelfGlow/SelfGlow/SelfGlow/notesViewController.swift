@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  notesViewController.swift
 //  SelfGlow
 //
 //  Created by Carly Wenig on 8/12/20.
@@ -8,18 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class notesViewController: UIViewController {
 
-    @IBOutlet weak var destressButton: UIButton!
-    @IBOutlet weak var wellbeingButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-             navigationController?.navigationBar.shadowImage = UIImage()
-        
-        destressButton.layer.cornerRadius = 20
-        wellbeingButton.layer.cornerRadius = 20
+
         // Do any additional setup after loading the view.
     }
     

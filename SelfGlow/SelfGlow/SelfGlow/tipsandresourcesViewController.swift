@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  tipsandresourcesViewController.swift
 //  SelfGlow
 //
 //  Created by Carly Wenig on 8/12/20.
@@ -8,19 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class tipsandresourcesViewController: UIViewController {
 
-    @IBOutlet weak var destressButton: UIButton!
-    @IBOutlet weak var wellbeingButton: UIButton!
+    @IBOutlet weak var hairButton: UIButton!
+    @IBOutlet weak var nailButton: UIButton!
+    @IBOutlet weak var skinButton: UIButton!
+    @IBOutlet weak var physicalButton: UIButton!
+    @IBOutlet weak var resourcesButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-             navigationController?.navigationBar.shadowImage = UIImage()
-        
-        destressButton.layer.cornerRadius = 20
-        wellbeingButton.layer.cornerRadius = 20
+
         // Do any additional setup after loading the view.
+        hairButton.layer.cornerRadius = 100
+        nailButton.layer.cornerRadius = 100
+        skinButton.layer.cornerRadius = 100
+        physicalButton.layer.cornerRadius = 100
+        resourcesButton.layer.cornerRadius = 100
     }
     
 
