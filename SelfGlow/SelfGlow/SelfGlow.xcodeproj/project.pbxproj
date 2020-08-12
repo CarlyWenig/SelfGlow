@@ -14,7 +14,7 @@
 		CF2A66B124E311B600223A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2A66B024E311B600223A36 /* Assets.xcassets */; };
 		CF2A66C024E3A01300223A36 /* newsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A66BF24E3A01300223A36 /* newsViewController.swift */; };
 		CF2A66C424E3A33F00223A36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A66C324E3A33F00223A36 /* ViewController.swift */; };
-		CF2A66C624E3A36800223A36 /* timerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A66C524E3A36800223A36 /* timerViewController.swift */; };
+		CF2A66C824E3AB8500223A36 /* timerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A66C724E3AB8500223A36 /* timerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		CF2A66B524E311B600223A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF2A66BF24E3A01300223A36 /* newsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsViewController.swift; sourceTree = "<group>"; };
 		CF2A66C324E3A33F00223A36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CF2A66C524E3A36800223A36 /* timerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerViewController.swift; sourceTree = "<group>"; };
+		CF2A66C724E3AB8500223A36 /* timerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +62,8 @@
 			children = (
 				CF2A66A424E311B100223A36 /* AppDelegate.swift */,
 				CF2A66A624E311B100223A36 /* SceneDelegate.swift */,
-				CF2A66C524E3A36800223A36 /* timerViewController.swift */,
 				CF2A66AA24E311B100223A36 /* Main.storyboard */,
+				CF2A66C724E3AB8500223A36 /* timerViewController.swift */,
 				CF2A66C324E3A33F00223A36 /* ViewController.swift */,
 				CF2A66BF24E3A01300223A36 /* newsViewController.swift */,
 				CF2A66B024E311B600223A36 /* Assets.xcassets */,
@@ -143,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF2A66C624E3A36800223A36 /* timerViewController.swift in Sources */,
+				CF2A66C824E3AB8500223A36 /* timerViewController.swift in Sources */,
 				CF2A66C424E3A33F00223A36 /* ViewController.swift in Sources */,
 				CF2A66AF24E311B100223A36 /* SelfGlow.xcdatamodeld in Sources */,
 				CF2A66A524E311B100223A36 /* AppDelegate.swift in Sources */,

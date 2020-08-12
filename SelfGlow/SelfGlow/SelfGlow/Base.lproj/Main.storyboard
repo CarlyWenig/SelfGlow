@@ -7,69 +7,59 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Timer Table View Controller-->
-        <scene sceneID="xli-hS-ZOa">
+        <!--Timer View Controller-->
+        <scene sceneID="PBs-O6-U4O">
             <objects>
-                <viewController id="Akd-LE-woF" customClass="TimerTableViewController" customModule="SelfGlow" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="c65-1s-YCs">
+                <viewController id="0Iu-Mq-A2e" customClass="timerViewController" customModule="SelfGlow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2M1-gh-GJY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9Y-hD-Ugo">
-                                <rect key="frame" x="49" y="417" width="156" height="56"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57Z-q8-vhg">
+                                <rect key="frame" x="186" y="248" width="76" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="START">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="start:" destination="Akd-LE-woF" eventType="touchUpInside" id="zc9-aY-GSQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXn-03-4fT">
-                                <rect key="frame" x="227" y="417" width="156" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="PAUSE">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="pause:" destination="Akd-LE-woF" eventType="touchUpInside" id="xMS-Yr-UsE"/>
-                                </connections>
-                            </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="0.0" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="eA4-gR-Qu9">
-                                <rect key="frame" x="160" y="364" width="118" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="slider:" destination="Akd-LE-woF" eventType="valueChanged" id="I1H-TK-WAU"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30 Seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgX-Py-Ug8">
-                                <rect key="frame" x="120" y="162" width="198" height="161"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="GLo-0P-rTN">
+                                <rect key="frame" x="167" y="303" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="slider:" destination="0Iu-Mq-A2e" eventType="valueChanged" id="zgH-fH-cKl"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdq-no-xek">
+                                <rect key="frame" x="90" y="406" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="start:" destination="0Iu-Mq-A2e" eventType="touchUpInside" id="Wib-JN-eOh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWd-Jc-ai1">
+                                <rect key="frame" x="246" y="406" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="pause"/>
+                                <connections>
+                                    <action selector="pause:" destination="0Iu-Mq-A2e" eventType="touchUpInside" id="SDn-JC-CXM"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.98823529409999999" green="0.8980392157" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <viewLayoutGuide key="safeArea" id="oOs-AE-f5g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="kIp-E5-CPD"/>
                     </view>
-                    <navigationItem key="navigationItem" id="HTz-ON-AeW"/>
+                    <navigationItem key="navigationItem" id="Jtl-bb-j9G"/>
                     <connections>
-                        <outlet property="label" destination="EgX-Py-Ug8" id="Jqo-Ht-ejZ"/>
-                        <outlet property="label1" destination="EgX-Py-Ug8" id="S5L-0R-oYW"/>
-                        <outlet property="lb1" destination="EgX-Py-Ug8" id="RaX-Zy-Har"/>
-                        <outlet property="pauseOutlet" destination="uXn-03-4fT" id="Jo8-eA-kEL"/>
-                        <outlet property="sliderOutlet" destination="eA4-gR-Qu9" id="XUz-bu-NXj"/>
-                        <outlet property="startOutlet" destination="q9Y-hD-Ugo" id="Rxw-du-wEX"/>
+                        <outlet property="label" destination="57Z-q8-vhg" id="0VE-Rm-5pR"/>
+                        <outlet property="pauseOutlet" destination="fWd-Jc-ai1" id="iee-Qc-doe"/>
+                        <outlet property="sliderOutlet" destination="GLo-0P-rTN" id="5BD-QK-GtS"/>
+                        <outlet property="startOutlet" destination="mdq-no-xek" id="PEa-7m-p1X"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bGd-Gv-qzQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CfB-c0-PTs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="404.34782608695656" y="-526.33928571428567"/>
+            <point key="canvasLocation" x="490" y="-548"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="FMe-pj-Zik">
@@ -216,9 +206,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Akd-LE-woF" kind="popoverPresentation" popoverAnchorView="7ek-DB-VrV" id="SWf-ZM-mln">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="0Iu-Mq-A2e" kind="show" id="Ccq-ti-m4c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hX9-C2-Ay4">

@@ -9,45 +9,55 @@
 import UIKit
 
 class timerViewController: UIViewController {
-    @objc var seconds = 30
+    var minutes = 0
     var timer = Timer()
-
-    @IBOutlet weak var label: UILabel!
     
     @IBOutlet weak var sliderOutlet: UISlider!
+    @IBOutlet weak var label: UILabel!
     
+    @IBAction func slider(_ sender: UISlider) {
+        minutes = Int(sender.value)
+        label.text = String(minutes) + " minute(s)"
+    }
+    
+    @IBOutlet weak var startOutlet: UIButton!
+    @IBAction func start(_ sender: UIButton) {
+        timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(timerViewController.counter), userInfo: nil, repeats: true)
+        sliderOutlet.isHidden = true
+        startOutlet.isHidden = true
+        
+    }
+    @objc func counter()
+    {
+        minutes -= 1
+        label.text = String(minutes)
+        
+        if (minutes == 0)
+        {
+            timer.invalidate()
+            sliderOutlet.isHidden = false
+            startOutlet.isHidden = false
+        }
+    }
+    
+    @IBOutlet weak var pauseOutlet: UIButton!
+    @IBAction func pause(_ sender: UIButton)
+    {
+        timer.invalidate()
+        minutes = 0
+        sliderOutlet.setValue(0, animated: true)
+        label.text = "0" + " minute(s)"
+        
+        sliderOutlet.isHidden = false
+        startOutlet.isHidden = false
+    }
     override func viewDidLoad() {
-                 super.viewDidLoad()
-            
-        func slider(_ sender: UISlider) {
-                   seconds = Int(sender.value)
-                   label.text = String(seconds) + "seconds"
-               }
-               
-        func start(_ sender: UIButton) {
-            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(getter: timerViewController.seconds), userInfo: nil, repeats: true)
-               }
-        func counter()
-               {
-                   seconds -= 1
-                   label.text=String(seconds)
-            + "seconds"
-                   if seconds == 0 {
-                       timer.invalidate ()
-                       seconds = 30
-                       sliderOutlet.setValue(30, animated: true)
-                       label.text = "30 seconds"
+        super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
     
 
-       
-       }
-    
-       
-        
-}
-       
     /*
     // MARK: - Navigation
 
@@ -59,5 +69,3 @@ class timerViewController: UIViewController {
     */
 
 }
-
-
