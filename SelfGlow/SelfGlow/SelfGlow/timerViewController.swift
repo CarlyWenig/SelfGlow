@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class timerViewController: UIViewController {
     var minutes = 0
     var timer = Timer()
+    var audioPlayer = AVAudioPlayer()
     
     @IBOutlet weak var sliderOutlet: UISlider!
     @IBOutlet weak var label: UILabel!
@@ -37,6 +39,7 @@ class timerViewController: UIViewController {
             timer.invalidate()
             sliderOutlet.isHidden = false
             startOutlet.isHidden = false
+            audioPlayer.play()
         }
     }
     
@@ -47,13 +50,23 @@ class timerViewController: UIViewController {
         minutes = 0
         sliderOutlet.setValue(0, animated: true)
         label.text = "0" + " minute(s)"
+        audioPlayer.stop()
         
         sliderOutlet.isHidden = false
         startOutlet.isHidden = false
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        do
+        {
+            let audioPath = Bundle.main.path(forResource: "1", ofType: ".mp3")
+            try audioPlayer = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
+        }
+        catch
+        {
+            
+        }
         // Do any additional setup after loading the view.
     }
     
