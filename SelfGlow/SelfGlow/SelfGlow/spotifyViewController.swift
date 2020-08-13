@@ -10,6 +10,9 @@ import UIKit
 
 class spotifyViewController: UIViewController {
 
+    @IBOutlet weak var happyMusic: UIButton!
+    @IBOutlet weak var calmMusic: UIButton!
+    @IBOutlet weak var chillMusic: UIButton!
     @IBAction func spotify1(_ sender: UIButton) {
         if let url = URL(string:"https://open.spotify.com/playlist/37i9dQZF1DXdPec7aLTmlC?si=LKxE7FGdQoSE8FE7zbdg0g"){
             UIApplication.shared.open(url)
@@ -34,6 +37,9 @@ class spotifyViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        happyMusic.layer.cornerRadius = 200
+        calmMusic.layer.cornerRadius = 200
+        chillMusic.layer.cornerRadius = 200
     }
     
 

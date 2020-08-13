@@ -19,11 +19,11 @@ class tipsandresourcesViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        hairButton.layer.cornerRadius = 100
-        nailButton.layer.cornerRadius = 100
-        skinButton.layer.cornerRadius = 100
-        physicalButton.layer.cornerRadius = 100
-        resourcesButton.layer.cornerRadius = 100
+        hairButton.layer.cornerRadius = 256
+        nailButton.layer.cornerRadius = 256
+        skinButton.layer.cornerRadius = 256
+        physicalButton.layer.cornerRadius = 256
+        resourcesButton.layer.cornerRadius = 256
     }
     
 
