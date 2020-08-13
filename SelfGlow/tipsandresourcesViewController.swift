@@ -24,6 +24,8 @@ class tipsandresourcesViewController: UIViewController {
         skinButton.layer.cornerRadius = 50
         physicalButton.layer.cornerRadius = 50
         resourcesButton.layer.cornerRadius = 50
+       
+        
     }
     
 
